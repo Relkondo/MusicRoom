@@ -75,9 +75,9 @@ class SignInScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: customSignInAppBar(appText: 'Music Room'),
+      appBar: customSignInAppBar(appText: 'Music Room', context: context),
       body: _buildContent(context),
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Theme.of(context).backgroundColor,
     );
   }
 

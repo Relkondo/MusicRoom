@@ -14,14 +14,11 @@ class DrawerTile extends StatelessWidget {
       leading: Icon(
         icon,
         size: 36,
-        color: const Color(0XFF072BB8),
+        color: Theme.of(context).primaryColor,
       ),
       title: Text(
         text,
-        style: const TextStyle(
-          color: Color(0XFF434343),
-          fontSize: 20,
-        ),
+        style: Theme.of(context).textTheme.headline5,
       ),
       onTap: () {
         if (route != null) {
